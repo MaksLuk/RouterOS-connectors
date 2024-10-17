@@ -1,0 +1,43 @@
+import ros_api
+
+router = ros_api.Api('localhost', user='admin', password='admin', port=8728)
+
+output = router.talk('/system/resource/print')
+print('='*30)
+print('ИНФОРМАЦИЯ О СИСТЕМЕ')
+print('='*30)
+print('/system/resource/print')
+print('='*30)
+print(output, end='\n\n\n')
+
+output = router.talk('/system/package/print')
+print('='*30)
+print('УСТАНОВЛЕННЫЕ ПАКЕТЫ RouterOS')
+print('='*30)
+print('/system/package/print')
+print('='*30)
+print(output, end='\n\n\n')
+
+output = router.talk('/user/print')
+print('='*30)
+print('ПОЛЬЗОВАТЕЛИ')
+print('='*30)
+print('/user/print')
+print('='*30)
+print(output, end='\n\n\n')
+
+output = router.talk('/interface/print')
+print('='*30)
+print('ПОЛУЧЕНИЕ ВСЕХ ИНТЕРФЕЙСОВ')
+print('='*30)
+print('/interface/print')
+print('='*30)
+print(output, end='\n\n\n')
+
+output = router.talk('/ip/route/print')
+print('='*30)
+print('ПОЛУЧЕНИЕ IP-АДРЕСОВ')
+print('='*30)
+print('/ip/route/print')
+print('='*30)
+print(output)

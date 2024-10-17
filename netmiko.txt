@@ -1,0 +1,67 @@
+==============================
+ИНФОРМАЦИЯ О СИСТЕМЕ
+==============================
+/system/resource/print
+==============================
+uptime: 1h10m48s
+                  version: 7.16 (stable)
+               build-time: 2024-09-20 13:00:27
+         factory-software: 7.1
+              free-memory: 303.0MiB
+             total-memory: 512.0MiB
+                      cpu: Intel(R)
+                cpu-count: 4
+            cpu-frequency: 3911MHz
+                 cpu-load: 0%
+           free-hdd-space: 71.2MiB
+          total-hdd-space: 89.2MiB
+  write-sect-since-reboot: 2168
+         write-sect-total: 2168
+        architecture-name: x86_64
+               board-name: CHR QEMU Standard PC (i440FX + PIIX, 1996)
+                 platform: MikroTik
+
+
+==============================
+УСТАНОВЛЕННЫЕ ПАКЕТЫ RouterOS
+==============================
+/system/package/print
+==============================
+Columns: NAME, VERSION, BUILD-TIME, SIZE
+# NAME      VERSION  BUILD-TIME           SIZE   
+0 routeros  7.16     2024-09-20 13:00:27  17.8MiB
+
+
+==============================
+ПОЛЬЗОВАТЕЛИ
+==============================
+/user/print
+==============================
+Columns: NAME, GROUP, LAST-LOGGED-IN, INACTIVITY-POLICY
+# NAME   GROUP  LAST-LOGGED-IN       INACTIVITY-POLICY
+;;; system default user
+0 admin  full   2024-10-17 14:44:00  none
+
+
+==============================
+ПОЛУЧЕНИЕ ВСЕХ ИНТЕРФЕЙСОВ
+==============================
+/interface/print
+==============================
+Flags: R - RUNNING
+Columns: NAME, TYPE, ACTUAL-MTU, MAC-ADDRESS
+#   NAME    TYPE      ACTUAL-MTU  MAC-ADDRESS      
+0 R ether1  ether           1500  54:05:AB:CD:12:31
+1 R lo      loopback       65536  00:00:00:00:00:00
+
+
+==============================
+ПОЛУЧЕНИЕ IP-АДРЕСОВ
+==============================
+/ip/route/print
+==============================
+Flags: D - DYNAMIC; A - ACTIVE; c - CONNECT, d - DHCP
+Columns: DST-ADDRESS, GATEWAY, DISTANCE
+    DST-ADDRESS    GATEWAY     DISTANCE
+DAd 0.0.0.0/0      172.18.0.1         1
+DAc 172.18.0.0/16  ether1             0

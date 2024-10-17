@@ -1,0 +1,38 @@
+==============================
+ИНФОРМАЦИЯ О СИСТЕМЕ
+==============================
+/system/resource/print
+==============================
+[{'uptime': '1h19m43s', 'version': '7.16 (stable)', 'build-time': '2024-09-20 13:00:27', 'factory-software': '7.1', 'free-memory': '316141568', 'total-memory': '536870912', 'cpu': 'Intel(R)', 'cpu-count': '4', 'cpu-frequency': '3911', 'cpu-load': '0', 'free-hdd-space': '74690560', 'total-hdd-space': '93564928', 'write-sect-since-reboot': '2368', 'write-sect-total': '2368', 'architecture-name': 'x86_64', 'board-name': 'CHR QEMU Standard PC (i440FX + PIIX, 1996)', 'platform': 'MikroTik'}]
+
+
+==============================
+УСТАНОВЛЕННЫЕ ПАКЕТЫ RouterOS
+==============================
+/system/package/print
+==============================
+[{'.id': '*1', 'name': 'routeros', 'version': '7.16', 'build-time': '2024-09-20 13:00:27', 'scheduled': '', 'size': '18633639', 'disabled': 'false'}]
+
+
+==============================
+ПОЛЬЗОВАТЕЛИ
+==============================
+/user/print
+==============================
+[{'.id': '*1', 'name': 'admin', 'group': 'full', 'inactivity-timeout': '10m', 'inactivity-policy': 'none', 'address': '', 'last-logged-in': '2024-10-17 14:54:00', 'expired': 'false', 'disabled': 'false', 'comment': 'system default user'}]
+
+
+==============================
+ПОЛУЧЕНИЕ ВСЕХ ИНТЕРФЕЙСОВ
+==============================
+/interface/print
+==============================
+[{'.id': '*2', 'name': 'ether1', 'default-name': 'ether1', 'type': 'ether', 'mtu': '1500', 'actual-mtu': '1500', 'mac-address': '54:05:AB:CD:12:31', 'last-link-up-time': '2024-10-17 13:35:26', 'link-downs': '0', 'rx-byte': '271114', 'tx-byte': '535690', 'rx-packet': '2697', 'tx-packet': '2957', 'rx-drop': '0', 'tx-drop': '0', 'tx-queue-drop': '0', 'rx-error': '0', 'tx-error': '0', 'fp-rx-byte': '0', 'fp-tx-byte': '0', 'fp-rx-packet': '0', 'fp-tx-packet': '0', 'running': 'true', 'disabled': 'false'}, {'.id': '*1', 'name': 'lo', 'type': 'loopback', 'mtu': '65536', 'actual-mtu': '65536', 'mac-address': '00:00:00:00:00:00', 'last-link-up-time': '2024-10-17 13:35:26', 'link-downs': '0', 'rx-byte': '25920', 'tx-byte': '25920', 'rx-packet': '160', 'tx-packet': '160', 'rx-drop': '0', 'tx-drop': '0', 'tx-queue-drop': '0', 'rx-error': '0', 'tx-error': '0', 'fp-rx-byte': '0', 'fp-tx-byte': '0', 'fp-rx-packet': '0', 'fp-tx-packet': '0', 'running': 'true', 'disabled': 'false'}]
+
+
+==============================
+ПОЛУЧЕНИЕ IP-АДРЕСОВ
+==============================
+/ip/route/print
+==============================
+[{'.id': '*80000001', 'dst-address': '0.0.0.0/0', 'routing-table': 'main', 'gateway': '172.18.0.1', 'immediate-gw': '172.18.0.1%ether1', 'distance': '1', 'scope': '30', 'target-scope': '10', 'vrf-interface': 'ether1', 'dynamic': 'true', 'inactive': 'false', 'active': 'true', 'dhcp': 'true', 'hw-offloaded': 'false', 'ecmp': 'false'}, {'.id': '*201C3018', 'dst-address': '172.18.0.0/16', 'routing-table': 'main', 'gateway': 'ether1', 'immediate-gw': 'ether1', 'distance': '0', 'scope': '10', 'target-scope': '5', 'local-address': '172.18.0.2%ether1', 'dynamic': 'true', 'inactive': 'false', 'active': 'true', 'connect': 'true', 'hw-offloaded': 'false', 'ecmp': 'false'}]
